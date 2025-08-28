@@ -89,3 +89,4 @@ This system not only addresses accessibility challenges but also lays the founda
 ### Summary
 
 The code establishes a functional **end-to-end workflow**: hand detection → landmark extraction → classification → translation → speech output. With real gesture data, the system will provide accurate recognition and meaningful speech feedback.
+
