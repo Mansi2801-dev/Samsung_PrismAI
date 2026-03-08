@@ -6,17 +6,14 @@ import pygame
 import os
 import time
 
-# --- STEP 1: SMART PATHS ---
-# Get the absolute path of the 'src' folder
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Get the Repo Root (one level up from 'src')
+
 REPO_ROOT = os.path.dirname(BASE_DIR)
 
-# Define paths to other folders
 MODEL_PATH = os.path.join(REPO_ROOT, "docs", "gesture_model(final).pkl")
 AUDIO_FOLDER = os.path.join(REPO_ROOT, "tts_audio")
 
-# --- INITIALIZATION ---
 
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
@@ -31,7 +28,6 @@ except Exception as e:
 
 pygame.mixer.init()
 
-# Use the smart path for audio
 audio_folder = AUDIO_FOLDER
 
 last_gesture = None
